@@ -101,11 +101,11 @@ local function on_receive_fields_poster(pos, formname, fields, player)
 			if (fields.write or fields.key_enter) then
 				display_poster(pos, node, player)
 			elseif (fields.font) then
-				font_api.show_font_list(player, pos, function (playername, pos)
-						local player = minetest.get_player_by_name(playername)
-						local node = minetest.get_node(pos)
-						if player and node then
-							edit_poster(pos, node, player)
+				font_api.show_font_list(player, pos, function (playername, npos)
+						local user = minetest.get_player_by_name(playername)
+						local node2 = minetest.get_node(npos)
+						if user and node2 then
+							edit_poster(npos, node2, user)
 						end
 					end)
 			end
