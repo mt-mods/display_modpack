@@ -41,9 +41,9 @@ minetest.register_node("ontime_clocks:green_digital", {
 	drawtype = "nodebox",
 	node_box = {
 		type = "wallmounted",
-		wall_side = { -0.5, -3/16, -7/16, -13/32, 7/32, 7/16 },
-		wall_top = { -7/16, 0.5, -7/32, 7/16, 13/32, 3/16 },
-		wall_bottom = { -7/16, -0.5, -3/16, 7/16, -13/32, 7/32 },
+		wall_side = {-0.5, -3/16, -7/16, -13/32, 7/32, 7/16},
+		wall_bottom = {-7/16, -0.5, -3/16, 7/16, -13/32, 7/32},
+		wall_top = {-7/16, 0.5, -7/32, 7/16, 13/32, 3/16}
 	},
 	tiles = {"ontime_clocks_digital.png"},
 	groups = {oddly_breakable_by_hand=1, not_blocking_trains=1, display_api=1},
@@ -74,9 +74,9 @@ minetest.register_node("ontime_clocks:red_digital", {
 	drawtype = "nodebox",
 	node_box = {
 		type = "wallmounted",
-		wall_side = { -0.5, -3/16, -7/16, -13/32, 7/32, 7/16 },
-		wall_bottom = { -0.5, -0.5, -0.5, 0.5, 0.5, 0.5 },
-		wall_top = { -0.5, -0.5, -0.5, 0.5, 0.5, 0.5 }
+		wall_side = {-0.5, -3/16, -7/16, -13/32, 7/32, 7/16},
+		wall_bottom = {-7/16, -0.5, -3/16, 7/16, -13/32, 7/32},
+		wall_top = {-7/16, 0.5, -7/32, 7/16, 13/32, 3/16}
 	},
 	tiles = {"ontime_clocks_digital.png"},
 	groups = {oddly_breakable_by_hand=1, not_blocking_trains=1, display_api=1},
