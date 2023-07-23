@@ -2,7 +2,6 @@ unused_args = false
 
 read_globals = {
 	"minetest",
-	"string",
 	"table",
 	"vector",
 	"default"
