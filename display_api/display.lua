@@ -252,7 +252,7 @@ function display_api.on_destruct(pos)
 end
 
 function display_api.on_blast(pos, intensity)
-	if not minetest.is_protected(pos, "tnt:blast") then
+	if not minetest.is_protected(pos, "") then
 		local node = minetest.get_node(pos)
 		local drops = minetest.get_node_drops(node, "tnt:blast")
 		minetest.remove_node(pos)
