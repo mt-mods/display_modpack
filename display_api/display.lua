@@ -282,7 +282,6 @@ function display_api.register_display_entity(entity_name)
 				collisionbox = {0, 0, 0, 0, 0, 0},
 				visual = "upright_sprite",
 				textures = {},
-				physical = false,
 				collide_with_objects = false,
 				pointable = false,
 			},
