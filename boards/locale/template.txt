@@ -1,6 +1,7 @@
 # textdomain: boards
+Text=
+Wipe=
+Write=
+Font=
 Black board=
 Green board=
-Text=
-Write=
-Wipe=

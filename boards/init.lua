@@ -35,8 +35,9 @@ local function set_formspec(pos)
 	meta:set_string("formspec",
 		"size[6,4]"..default.gui_bg..default.gui_bg_img..default.gui_slots..
 		"textarea[0.5,0.7;5.5,3;display_text;"..FS("Text")..";" .. display_text .. "]"..
-		"button_exit[3,3.5;2,1;ok;"..FS("Write").."]"..
-		"button_exit[1,3.5;2,1;wipe;"..FS("Wipe").."]")
+		"button_exit[0,3.5;2,1;wipe;"..FS("Wipe").."]"..
+		"button_exit[2,3.5;2,1;ok;"..FS("Write").."]"..
+		"button[4,3.5;2,1;font;"..FS("Font").."]")
 end
 
 -- On boards, everyone is allowed to write and wipe
@@ -47,6 +48,10 @@ local function on_receive_fields(pos, formname, fields, player)
 		end
 		if fields.wipe then
 			signs_api.set_display_text(pos, "", fields.font)
+		end
+		if fields.font then
+			signs_api.set_display_text(pos, fields.display_text)
+			font_api.show_font_list(player, pos)
 		end
 	end
 end
