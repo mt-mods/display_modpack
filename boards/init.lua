@@ -35,8 +35,8 @@ local function set_formspec(pos)
 	meta:set_string("formspec",
 		"size[6,3.5]"..default.gui_bg..default.gui_bg_img..default.gui_slots..
 		"textarea[0.55,0.25;5.5,3;display_text;"..FS("Text")..";" .. display_text .. "]"..
-		"button_exit[1,3.35;2,1;ok;"..FS("Write").."]"..
-		"button[3,3.35;2,1;font;"..FS("Font").."]")
+		"button_exit[1,2.75;2,1;ok;"..FS("Write").."]"..
+		"button[3,2.75;2,1;font;"..FS("Font").."]")
 end
 
 -- On boards, everyone is allowed to write and wipe
