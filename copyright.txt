@@ -1,5 +1,5 @@
 display_modpack (all mods):
-- Original author: Pierre-Yves Rollo (pyrollo) License: GPL v3, font_metro LGPL v2.1
+- Original author: Pierre-Yves Rollo (pyrollo) License: LGPL v3, font_metro LGPL v2.1
 - Many other contributors, see `git log`
 
 boards:
