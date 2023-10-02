@@ -283,7 +283,7 @@ function display_api.register_display_entity(entity_name)
 				visual = "upright_sprite",
 				textures = {},
 				collide_with_objects = false,
-				pointable = false,
+				pointable = false
 			},
 			on_activate = display_api.on_activate,
 			get_staticdata = function(self)

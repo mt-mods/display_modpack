@@ -65,7 +65,12 @@ if minetest.registered_entities["signs:text"] == nil then
 			if self.object then
 				self.object:remove()
 			end
-		end
+		end,
+		initial_properties = {
+			collisionbox = {0, 0, 0, 0, 0, 0},
+			visual = "upright_sprite",
+			textures = {}
+		}
 	})
 end
 
