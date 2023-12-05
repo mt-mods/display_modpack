@@ -167,7 +167,7 @@ function signs_api.register_sign(mod, name, model)
 			fixed = {-model.width/2, -model.height/2, 0.5,
 					 model.width/2, model.height/2, 0.5 - model.depth},
 		},
-		groups = {choppy=2, dig_immediate=2, not_blocking_trains=1, display_api=1,signs_api_lbm=1},
+		groups = {choppy=2, dig_immediate=2, not_blocking_trains=1, display_api=1,signs_api_formspec_lbm=1},
 		sounds = default.node_sound_defaults(),
 		display_entities = {
 			["signs:display_text"] = {
@@ -227,7 +227,7 @@ minetest.register_lbm({
 	label = "Update signs_api formspecs",
 	name = "signs_api:update_formspecs",
 	run_at_every_load = false,
-	nodenames = {"group:signs_api_lbm"},
+	nodenames = {"group:signs_api_formspec_lbm"},
 	action = function(pos)
 		signs_api.set_formspec(pos)
 	end,
