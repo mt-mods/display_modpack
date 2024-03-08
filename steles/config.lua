@@ -19,11 +19,12 @@
 --]]
 
 local S = steles.S
+local mat = xcompat.materials
 
 steles.materials = {
-	'default:stone',
-	'default:sandstone',
-	'default:desert_stone',
+	mat.stone,
+	'default:sandstone', -- not in xcompat
+	mat.desert_stone,
 	'technic:marble',
 	'technic:granite',
 }
