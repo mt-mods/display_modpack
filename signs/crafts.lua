@@ -48,6 +48,30 @@ minetest.register_craft({
 	}
 })
 
+if minetest.registered_items["dye:red"] then
+        local dyes = {
+                "dye:white",
+		"dye:grey",
+		"dye:orange",
+		"dye:brown",
+		"dye:dark_grey",
+		"dye:yellow",
+		"dye:green",
+		"dye:red",
+	}
+	for i, dye in ipairs(dyes) do
+		minetest.register_craft({
+				type = "shaped",
+				output = minetest.itemstring_with_palette("signs:paper_poster", (i-1) * 32),
+				recipe = {
+					{ "signs:paper_poster", dye, "" },
+					{ "",             "",         "" },
+					{ "",             "",         "" },
+				}
+		})
+	end
+end
+
 minetest.register_craft({
 	output = 'signs:label_small',
 	recipe = {
