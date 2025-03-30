@@ -62,13 +62,9 @@ if xcompat then
 	}
 	for i, dye in ipairs(dyes) do
 		minetest.register_craft({
-				type = "shaped",
-				output = minetest.itemstring_with_palette("signs:paper_poster", (i-1) * 32),
-				recipe = {
-					{ "signs:paper_poster", dye, "" },
-					{ "",             "",         "" },
-					{ "",             "",         "" },
-				}
+			type = "shapeless",
+			output = minetest.itemstring_with_palette("signs:paper_poster", (i-1) * 32),
+			recipe = {"signs:paper_poster", dye},
 		})
 	end
 end
