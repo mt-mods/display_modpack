@@ -48,16 +48,17 @@ minetest.register_craft({
 	}
 })
 
-if minetest.registered_items["dye:red"] then
-        local dyes = {
-                "dye:white",
-		"dye:grey",
-		"dye:orange",
-		"dye:brown",
-		"dye:dark_grey",
-		"dye:yellow",
-		"dye:green",
-		"dye:red",
+if xcompat then
+	local m = xcompat.materials
+	local dyes = {
+		m.dye_white,
+		m.dye_grey,
+		m.dye_orange,
+		m.dye_brown,
+		m.dye_dark_grey,
+		m.dye_yellow,
+		m.dye_green,
+		m.dye_red,
 	}
 	for i, dye in ipairs(dyes) do
 		minetest.register_craft({
